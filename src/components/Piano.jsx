@@ -14,11 +14,11 @@ export default function Piano() {
             "Db4", "Eb4", "Gb4", "Ab4", "Bb4",
             
         ]}
-        
-        function playKeys(note) {
-            const audio = new Audio(`/Piano/${note}.mp3`); 
-            audio.play().catch((error) => {
-            console.error("Error al reproducir el audio:", error);
+    
+    function playKeys(note) {
+        const audio = new Audio(`/Piano/${note}.mp3`); 
+        audio.play().catch((error) => {
+        console.error("Error al reproducir el audio:", error);
     })
         }
 

@@ -8,14 +8,15 @@ export default function Key(props) {
         <button 
         className={`key`}
         style={{backgroundColor: keyClicked ? props.pushColor : props.color,}}
-        onMouseDown={() => {setKeyClicked(true);
-                            props.playKey(props.note)
+        onKeyDown={(e) => {console.log(e.key)}}
+        onMouseDown={() => {
+            setKeyClicked(true);
+            props.playKey(props.note)
         }} 
         onMouseUp={() => {setKeyClicked(false)}}
         onMouseLeave={() => {setKeyClicked(false)}}
-        
         value={props.note}
-         >{props.note}</button>  
+         >{props.keyboard}</button>  
     )
 }
 
@@ -24,4 +25,5 @@ Key.propTypes = {
     color: PropTypes.string,
     pushColor: PropTypes.string,
     playKey: PropTypes.func,
+    keyboard: PropTypes.string,
 }
