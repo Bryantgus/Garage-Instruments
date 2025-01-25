@@ -11,7 +11,7 @@ export default function Piano() {
         black:[
             "Db4", "Eb4", "Gb4", "Ab4", "Bb4",
             "Db5", "Eb5", "Gb5", "Ab5", "Bb5",
-            "Db4", "Eb4", "Gb4", "Ab4", "Bb4",
+            "Db6", "Eb6", "Gb6", "Ab6", "Bb6",
             
         ]}
     
